@@ -1,2 +1,2 @@
-# ui
-hexsoftstudio ui
+# nuxt-ui
+hexsoftstudio nuxt-ui
