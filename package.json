@@ -1,6 +1,6 @@
 {
   "name": "@hexsoftstudio/nuxt-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hexsoft Studio nuxt-ui",
   "homepage": "https://hexsoftstudio.github.io/nuxt-ui/",
   "bugs": {
@@ -8,8 +8,12 @@
   },
   "repository": "hexsoftstudio/nuxt-ui",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt example",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -18,10 +22,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@hexsoftstudio/theme-default": "^0.0.5",
+    "@hexsoftstudio/theme-default": "^0.0.7",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
     "bulma": "^0.9.2",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12"
