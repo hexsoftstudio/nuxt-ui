@@ -1,6 +1,6 @@
 {
   "name": "@hexsoftstudio/nuxt-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hexsoft Studio nuxt-ui",
   "homepage": "https://hexsoftstudio.github.io/nuxt-ui/",
   "bugs": {
@@ -8,10 +8,12 @@
   },
   "repository": "hexsoftstudio/nuxt-ui",
   "license": "MIT",
-  "files": [
-    "lib"
-  ],
   "main": "lib/module.js",
+  "files": [
+    "lib",
+    "components",
+    "index.js"
+  ],
   "scripts": {
     "dev": "nuxt example",
     "build": "nuxt build",

@@ -1,11 +1,17 @@
 <template>
   <div>
     Works!
+    <Copyright />
   </div>
 </template>
 
 <script>
-export default {
+import Copyright from "../../components/Copyright.vue";
 
+export default {
+  name: 'Home',
+  components: {
+    Copyright
+  }
 }
 </script>
