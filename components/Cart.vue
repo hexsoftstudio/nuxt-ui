@@ -5,7 +5,7 @@
         <use xlink:href="./icons/sprite.svg#icon-shopping-cart"></use>
       </svg>
     </div>
-    <div class="cart__label">
+    <div v-if="count" class="cart__label">
       <span class="cart__label--count">
         {{ count }}
       </span>
@@ -20,7 +20,7 @@ export default {
     count: {
       type: String,
       required: false,
-      default: '5',
+      default: '',
     },
   },
 }
