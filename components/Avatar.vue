@@ -7,13 +7,6 @@
       :alt="avatar.alt"
       :class="avatar.class"
     />
-    <span
-      v-for="(avatar, index) in avatars"
-      :key="index"
-      class="avatar__notification"
-    >
-      {{ avatar.notification }}
-    </span>
   </div>
 </template>
 
