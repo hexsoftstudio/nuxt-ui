@@ -2,8 +2,8 @@
   <div>
     <Copyright />
     <Avatar :avatars="avatars" />
-    <Cart />
-    <Ratings />
+    <Cart count='5' />
+    <Ratings :stars="stars" />
   </div>
 </template>
 
@@ -39,6 +39,13 @@ export default {
           alt: 'Avatar 3',
           notification: '30',
         },
+      ],
+      stars: [
+        {img: './icons/sprite.svg#icon-star'},
+        {img: './icons/sprite.svg#icon-star'},
+        {img: './icons/sprite.svg#icon-star'},
+        {img: './icons/sprite.svg#icon-star'},
+        {img: './icons/sprite.svg#icon-star'},
       ],
     }
   },

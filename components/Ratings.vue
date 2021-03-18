@@ -11,10 +11,21 @@ export default {
   name: 'Ratings',
   props: {
     stars: {
-      type: Number,
+      type: Array,
       required: false,
-      default: 5,
+      default: () => [],
     },
   },
 }
 </script>
+
+<style scoped>
+.ratings__star {
+  --rating-star-size: 1.75rem;
+  --rating-star-color: orange;
+
+  width: var(--rating-star-size);
+  height: var(--rating-star-size);
+  fill: var(--rating-star-color);
+}
+</style>
