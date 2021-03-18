@@ -4,6 +4,8 @@
     <Avatar :avatars="avatars" />
     <Cart count='5' />
     <Ratings :stars="stars" />
+    <SocialMedia :title="socialmedia.title" :socialmedia="socialmedia.media" />
+    <User />
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import Copyright from "../../components/Copyright.vue";
 import Avatar from "../../components/Avatar.vue";
 import Cart from "../../components/Cart.vue";
 import Ratings from "../../components/Ratings.vue";
+import SocialMedia from "../../components/SocialMedia.vue";
+import User from "../../components/User.vue";
 
 export default {
   name: 'Home',
@@ -20,6 +24,8 @@ export default {
     Avatar,
     Cart,
     Ratings,
+    SocialMedia,
+    User,
   },
   data() {
     return {
@@ -47,6 +53,10 @@ export default {
         {img: './icons/sprite.svg#icon-star'},
         {img: './icons/sprite.svg#icon-star'},
       ],
+      socialmedia: {
+        title: 'Follow Us On',
+        media: [ 'facebook', 'google', 'instagram', 'linkedin', 'pinterest', 'twitter', 'vimeo', 'youtube'],
+      },
     }
   },
 }

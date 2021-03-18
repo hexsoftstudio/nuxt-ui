@@ -928,10 +928,10 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@hexsoftstudio/theme-default@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@hexsoftstudio/theme-default/-/theme-default-0.0.11.tgz#b9f5bf90c33a8de7371be88071828e67f82896b8"
-  integrity sha512-Jd360uYbNBY0e9quC07OK+fqpkVwpgrmEz9TlmgxB+jEL7YTW8BIZdE00woqzxe8zgqyaE1RpxaTCKKGGOjH6Q==
+"@hexsoftstudio/theme-default@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@hexsoftstudio/theme-default/-/theme-default-0.0.12.tgz#1e837826c3a7925813d510c6e414209e373760ed"
+  integrity sha512-ekJ3vfyQsnPGctzF0j0gtPl16rb0sFS8d9J6g6m4wczfDGg+T1BDi9c7pJ0Q9EnVk3ncOxZoZGW24d0SdAay6g==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
