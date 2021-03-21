@@ -1,17 +1,19 @@
 <template>
   <div>
-    <Copyright />
-    <Avatar :avatars="avatars" />
+    <User />
+    <Avatar :avatars="data" />
     <Cart count='5' />
     <Ratings :stars="stars" />
     <SocialMedia :title="socialmedia.title" :socialmedia="socialmedia.media" />
-    <User />
+    <SimpleCard :cards="data" />
+    <Copyright />
   </div>
 </template>
 
 <script>
 import Copyright from "../../components/Copyright.vue";
 import Avatar from "../../components/Avatar.vue";
+import SimpleCard from "../../components/Cards/Simple.vue";
 import Cart from "../../components/Cart.vue";
 import Ratings from "../../components/Ratings.vue";
 import SocialMedia from "../../components/SocialMedia.vue";
@@ -22,6 +24,7 @@ export default {
   components: {
     Copyright,
     Avatar,
+    SimpleCard,
     Cart,
     Ratings,
     SocialMedia,
@@ -29,21 +32,27 @@ export default {
   },
   data() {
     return {
-      avatars: [
+      data: [
         {
-          imagesrc: 'http://hexsoftstudio.com/images/avatar/avatar2.png',
+          image: 'http://hexsoftstudio.com/images/avatar/avatar2.png',
           alt: 'Avatar 1',
           notification: '10',
+          title: 'Luxury homes',
+          text: 'Lorem ipsum dolor sit amet  consectetur consectetur adipisicing elit. Adipisci, laboriosam sit. Modi fuga necessitatibus animi!Modi fuga necessitatibus animi! Modi fuga necessitatibus animi! Modi fuga necessitatibus animi!',
         },
         {
-          imagesrc: 'http://hexsoftstudio.com/images/avatar/avatar3.png',
+          image: 'http://hexsoftstudio.com/images/avatar/avatar3.png',
           alt: 'Avatar 2',
           notification: '20',
+          title: 'Luxury homes',
+          text: 'Lorem ipsum dolor sit amet  consectetur consectetur adipisicing elit. Adipisci, laboriosam sit. Modi fuga necessitatibus animi!Modi fuga necessitatibus animi! Modi fuga necessitatibus animi! Modi fuga necessitatibus animi!',
         },
         {
-          imagesrc: 'http://hexsoftstudio.com/images/avatar/avatar4.png',
+          image: 'http://hexsoftstudio.com/images/avatar/avatar4.png',
           alt: 'Avatar 3',
           notification: '30',
+          title: 'Luxury homes',
+          text: 'Lorem ipsum dolor sit amet  consectetur consectetur adipisicing elit. Adipisci, laboriosam sit. Modi fuga necessitatibus animi!Modi fuga necessitatibus animi! Modi fuga necessitatibus animi! Modi fuga necessitatibus animi!',
         },
       ],
       stars: [

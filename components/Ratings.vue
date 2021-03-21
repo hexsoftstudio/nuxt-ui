@@ -18,14 +18,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.ratings__star {
-  --rating-star-size: 1.75rem;
-  --rating-star-color: orange;
-
-  width: var(--rating-star-size);
-  height: var(--rating-star-size);
-  fill: var(--rating-star-color);
-}
-</style>

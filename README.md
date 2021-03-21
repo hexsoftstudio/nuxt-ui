@@ -35,20 +35,20 @@ buildModules: [
 
 ```html
 <template>
-    <div>
-      <Copyright />
-      <Avatar :avatars="avatars" />
-      <Cart count='5' />
-      <Ratings :stars="stars" />
-      <SocialMedia :title="socialmedia.title" :socialmedia="socialmedia.media" />
-      <User />
-    </div>
+  <div>
+    <User />
+    <Avatar :avatars="avatars" />
+    <Cart count='5' />
+    <Ratings :stars="stars" />
+    <SocialMedia :title="socialmedia.title" :socialmedia="socialmedia.media" />
+    <Copyright />
+  </div>
 </template>
 
 <script>
-import Copyright from '@hexsoftstudio/nuxt-ui/components/Copyright.vue'
 import Avatar from '@hexsoftstudio/nuxt-ui/components/Avatar.vue'
 import Cart from '@hexsoftstudio/nuxt-ui/components/Cart.vue'
+import Copyright from '@hexsoftstudio/nuxt-ui/components/Copyright.vue'
 import Ratings from '@hexsoftstudio/nuxt-ui/components/Ratings.vue'
 import SocialMedia from '@hexsoftstudio/nuxt-ui/components/SocialMedia.vue'
 import User from '@hexsoftstudio/nuxt-ui/components/User.vue'
@@ -56,9 +56,9 @@ import User from '@hexsoftstudio/nuxt-ui/components/User.vue'
 export default {
   name: 'Home',
   components: {
-    Copyright,
     Avatar,
     Cart,
+    Copyright,
     Ratings,
     SocialMedia,
     User,
@@ -100,4 +100,3 @@ export default {
 ```
 
 For examples see [https://hexsoftstudio.github.io/nuxt-ui/](https://hexsoftstudio.github.io/nuxt-ui/)
-

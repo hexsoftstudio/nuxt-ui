@@ -1,6 +1,6 @@
 <template>
-  <div class="footer__copyright">
-    <span>© {{ copytext }} {{ text }} {{ abn }}</span>
+  <div class="footer">
+    <span class="footer__copyright">© {{ copytext }} {{ text }} {{ abn }}</span>
   </div>
 </template>
 
