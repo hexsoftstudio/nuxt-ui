@@ -6,7 +6,6 @@
         :key="index"
         :class="showClass(media)"
       >
-        <use v-bind:xlink:href="showSVG(media)"></use>
         <use
           v-bind="{ 'xlink:href': require('./icons/sprite.svg') + showSVG(media) }">
         </use>
@@ -34,7 +33,6 @@ export default {
       return "socialmedia__" + media
     },
     showSVG(media) {
-      // return "./icons/sprite.svg#icon-" + media
       return "#icon-" + media
     }
   }

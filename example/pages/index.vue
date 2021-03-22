@@ -4,8 +4,8 @@
     <div>
       <User />
       <Avatar :avatars="avatars" />
-      <Cart count='5' />
-      <Ratings :stars="stars" />
+      <Cart count='10' />
+      <Ratings :ratings='5' />
       <SocialMedia :title="socialmedia.title" :socialmedia="socialmedia.media" />
       <SimpleCard :cards="homes" />
       <Copyright />
@@ -61,13 +61,6 @@ export default {
           text: 'Lorem ipsum dolor sit amet  consectetur consectetur adipisicing elit. Adipisci, laboriosam sit. Modi fuga necessitatibus animi!Modi fuga necessitatibus animi! Modi fuga necessitatibus animi! Modi fuga necessitatibus animi!',
         },
       ],
-      stars: [
-        {img: './icons/sprite.svg#icon-star'},
-        {img: './icons/sprite.svg#icon-star'},
-        {img: './icons/sprite.svg#icon-star'},
-        {img: './icons/sprite.svg#icon-star'},
-        {img: './icons/sprite.svg#icon-star'},
-      ],
       socialmedia: {
         title: 'Follow Us On',
         media: [ 'facebook', 'google', 'instagram', 'linkedin', 'pinterest', 'twitter', 'vimeo', 'youtube'],
@@ -76,7 +69,7 @@ export default {
         img: 'https://source.unsplash.com/weekly?water',
         poster: 'https://source.unsplash.com/weekly?water',
         mp4: 'https://hexsoftstudio.github.io/demo/video/170216A_142_WomanWatchingWaterfall2_1080p.mp4',
-        webm: 'https://hexsoftstudio.github.io/demo/video/video/170216A_142_WomanWatchingWaterfall2_1080p.webm',
+        webm: 'https://hexsoftstudio.github.io/demo/video/170216A_142_WomanWatchingWaterfall2_1080p.webm',
       },
     }
   },

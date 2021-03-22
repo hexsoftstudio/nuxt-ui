@@ -1,7 +1,7 @@
 <template>
   <div id="ratings">
     <svg v-for="(star, index) in stars" :key="index" class="ratings__star">
-      <use xlink:href="./icons/sprite.svg#icon-star"></use>
+      <use v-bind="{ 'xlink:href': showSVGStar() }"></use>
     </svg>
   </div>
 </template>
@@ -10,10 +10,25 @@
 export default {
   name: 'Ratings',
   props: {
-    stars: {
-      type: Array,
+    ratings: {
+      type: [String, Number],
       required: false,
-      default: () => [],
+      default: '0',
+    },
+  },
+  data() {
+    return {
+      stars: [],
+    }
+  },
+  mounted() {
+    for (let $x = 0; $x < parseInt(this.ratings); $x++) {
+      this.stars.push('star')
+    }
+  },
+  methods: {
+    showSVGStar() {
+      return require('./icons/sprite.svg') + '#icon-star'
     },
   },
 }
