@@ -1,6 +1,6 @@
 # nuxt-ui
 
-[![npm (scoped)](https://img.shields.io/npm/v/@hexsoftstudio/theme-default.svg)](https://github.com/hexsoftstudio/theme-default)
+[![npm (scoped)](https://img.shields.io/npm/v/@hexsoftstudio/nuxt-ui.svg)](https://github.com/hexsoftstudio/nuxt-ui)
 
 Nuxt Ui components
 

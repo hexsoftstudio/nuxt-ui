@@ -920,10 +920,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@hexsoftstudio/theme-default@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@hexsoftstudio/theme-default/-/theme-default-0.0.14.tgz#a61f254f49f270f63f7dc752c91eb5de694fe61a"
-  integrity sha512-uXcM0bJPOgGaPVNKeTux8SV3+7msAfJ3voitmW059JSI/sfKWR216Z0h9Hk+4JQlmfyohiA9UI848wum0QuotQ==
+"@hexsoftstudio/theme-default@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@hexsoftstudio/theme-default/-/theme-default-0.0.15.tgz#0aecc4fe46bed1fd1791b89daac44f86c60b90f0"
+  integrity sha512-KmbvUkSY+60DXzNaHBQRImfKuFf/b0l0qcZde5j7Gb+3Cxxsh/FYww0GAiuN8A3eytphmMfTlNJNT2z4pXZXaA==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
