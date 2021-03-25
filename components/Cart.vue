@@ -2,7 +2,7 @@
   <div class="cart">
     <div class="cart__image">
       <svg class="cart__image--shopping-cart">
-        <use xlink:href="./icons/sprite.svg#icon-shopping-cart"></use>
+        <use v-bind="{ 'xlink:href': showSVGCart() }"></use>
       </svg>
     </div>
     <div v-if="count" class="cart__label">
@@ -21,6 +21,11 @@ export default {
       type: String,
       required: false,
       default: '',
+    },
+  },
+  methods: {
+    showSVGCart() {
+      return require('./icons/sprite.svg') + '#icon-shopping-cart'
     },
   },
 }

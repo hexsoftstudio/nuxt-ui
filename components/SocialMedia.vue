@@ -7,7 +7,7 @@
         :class="showClass(media)"
       >
         <use
-          v-bind="{ 'xlink:href': require('./icons/sprite.svg') + showSVG(media) }">
+          v-bind="{ 'xlink:href': showSVG(media) }">
         </use>
       </svg>
     </div>
@@ -33,8 +33,8 @@ export default {
       return "socialmedia__" + media
     },
     showSVG(media) {
-      return "#icon-" + media
-    }
-  }
+      return require('./icons/sprite.svg') + "#icon-" + media
+    },
+  },
 }
 </script>

@@ -1,6 +1,6 @@
 {
   "name": "@hexsoftstudio/nuxt-ui",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Hexsoft Studio nuxt-ui",
   "homepage": "https://hexsoftstudio.github.io/nuxt-ui/",
   "bugs": {
@@ -24,7 +24,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@hexsoftstudio/theme-default": "^0.0.15",
+    "@hexsoftstudio/theme-default": "^0.0.16",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",

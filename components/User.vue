@@ -1,17 +1,17 @@
 <template>
   <div class="user">
     <svg v-if="isLogin" class="user__image">
-      <use xlink:href="./icons/sprite.svg#icon-user"></use>
+      <use v-bind="{ 'xlink:href': showSVG('user') }"></use>
     </svg>
     <svg v-if="isLogin" class="user__login">
-      <use xlink:href="./icons/sprite.svg#icon-lock-open"></use>
+      <use v-bind="{ 'xlink:href': showSVG('lock-open') }"></use>
     </svg>
     <span v-if="isLogin" class="user__login--name">{{ name }}</span>
     <svg v-if="!isLogin" class="user__image">
-      <use xlink:href="./icons/sprite.svg#icon-user"></use>
+      <use v-bind="{ 'xlink:href': showSVG('user') }"></use>
     </svg>
     <svg v-if="!isLogin" class="user__logout">
-      <use xlink:href="./icons/sprite.svg#icon-lock"></use>
+      <use v-bind="{ 'xlink:href': showSVG('lock') }"></use>
     </svg>
     <span v-if="!isLogin" class="user__logout--register">Register</span>
   </div>
@@ -30,6 +30,14 @@ export default {
       type: String,
       required: false,
       default: '',
+    },
+  },
+  methods: {
+    showClass(media) {
+      return "socialmedia__" + media
+    },
+    showSVG(icon) {
+      return require('./icons/sprite.svg') + "#icon-" + icon
     },
   },
 }
